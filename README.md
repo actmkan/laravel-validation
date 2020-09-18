@@ -7,10 +7,22 @@
 
 ## Installation
 
-Add "prettus/laravel-repository": "1.1.*" to composer.json
- 
-```json
-"prettus/laravel-validation": "1.1.*"
+Add the following snippets to your `composer.json` file:
+
+```
+  "repositories": [
+      { "type": "git", "url": "https://github.com/masroore/laravel-validation" }
+  ],
+  "require": {
+      ...
+      "prettus/laravel-validation": "dev-master",
+  },
+```
+
+Execute the following command to get the latest version of the package:
+
+```terminal
+composer update
 ```
     
 ### Create a validator
